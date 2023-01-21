@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homeuserfragmenet">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Tell us about your day"
+
+            />
+
+
+        <me.sujanpoudel.wheelview.WheelView
+            android:id="@+id/wheel_view"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text01"
+            app:wheelAnchorAngle="270"
+            app:wheelAnimationDuration="800"
+            app:wheelArcBackgroundColor="@color/primary01"
+            app:wheelCenterIconPadding="16dp"
+            app:wheelCenterIconTint="@android:color/white"
+            app:wheelCenterIcon="@drawable/ic_baseline_person_outline_24"
+            app:wheelDividerStrokeWidth="16dp"
+            app:wheelMode="ANIMATE_TO_ANCHOR"
+            app:wheelSelectedArcBackgroundColor="@color/primary03"
+            app:wheelSelectedTextColor="#FFF"
+            app:wheelStartAngle="315"
+            app:wheelTextColor="#000000"
+            app:wheelTextSize="16sp"
+            android:contextClickable="true"
+            android:onClick="select"
+
+            tools:ignore="OnClick" />
+
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

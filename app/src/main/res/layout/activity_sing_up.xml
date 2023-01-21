@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".login.Singup">
+        tools:context=".SingUp">
         <RelativeLayout
             android:id="@+id/relativephoto"
             android:layout_width="100dp"
@@ -24,17 +24,9 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_baseline_person_outline_24"
+                android:src="@drawable/img"
                 android:transitionName="logo" />
 
-            <Button
-                android:id="@+id/pickButton"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="#00000000"
-                tools:ignore="SpeakableTextPresentCheck">
-
-            </Button>
         </RelativeLayout>
 
 
@@ -84,8 +76,30 @@
                 android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutAge"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLayoutEmail"
+            app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+            app:startIconTint="@color/primary03"
+            >
 
-            <com.google.android.material.textfield.TextInputLayout
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtAge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Date de naissance"
+                android:inputType="date" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txtlayoutadresse"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -93,8 +107,8 @@
                 app:errorEnabled="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtLayoutEmail"
-                app:startIconDrawable="@drawable/ic_email"
+                app:layout_constraintTop_toBottomOf="@+id/txtLayoutAge"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
 
                 app:startIconTint="@color/primary03">
 
@@ -117,7 +131,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtlayoutadresse"
-            app:startIconDrawable="@drawable/ic_email"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
             app:startIconTint="@color/primary03">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -128,26 +142,7 @@
                 android:inputType="number" />
 
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtLayoutCin"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            app:errorEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLayoutPhone"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/primary03">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtCin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="CIN"
-                android:inputType="number" />
-
-        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtLayoutpassword"
@@ -157,28 +152,41 @@
             app:errorEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLayoutCin"
-            app:startIconDrawable="@drawable/ic_email"
+            app:layout_constraintTop_toBottomOf="@+id/txtLayoutPhone"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
 
             app:startIconTint="@color/primary03">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtpassword"
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="password"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
-   <LinearLayout
+        <TextView
+            android:id="@+id/textsex"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Gender "
+            android:textSize="18sp"
+            android:gravity="left"
+            android:textColor="@color/primary03"
+            app:layout_constraintStart_toStartOf="@+id/txtLayoutpassword"
+            app:layout_constraintTop_toBottomOf="@+id/txtLayoutpassword"
+            />
+
+        <LinearLayout
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:id="@+id/sexe"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/txtLayoutpassword">
-    <androidx.appcompat.widget.AppCompatCheckBox
+            app:layout_constraintStart_toStartOf="@+id/txtLayoutpassword"
+       app:layout_constraintTop_toBottomOf="@+id/textsex">
+
+       <androidx.appcompat.widget.AppCompatCheckBox
 
         android:id="@+id/sexef"
         android:layout_width="wrap_content"
@@ -188,7 +196,7 @@
 
         />
        <Space
-           android:layout_width="100dp"
+           android:layout_width="80dp"
            android:layout_height="50dp"/>
 
        <androidx.appcompat.widget.AppCompatCheckBox
@@ -200,7 +208,20 @@
            android:hint="Homme" />
 
 
+
    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatCheckBox
+
+            android:id="@+id/role"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="Singup as psychiatrist"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sexe"
+            />
+
 
 
         <Button
@@ -214,7 +235,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sexe"
+            app:layout_constraintTop_toBottomOf="@+id/role"
             app:layout_constraintVertical_bias="0.0" />
 
         <LinearLayout
