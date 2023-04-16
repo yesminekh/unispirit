@@ -84,7 +84,7 @@ class SingUp : AppCompatActivity() {
             if(psy!!.isChecked){
                 rolee="psy"}
             else{
-                rolee="NormaleUser"}
+                rolee="NormalUser"}
 
 
             user.email = email?.text.toString()

@@ -5,6 +5,7 @@
     android:id="@+id/constraint_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,7 +51,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="fullname"
-
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -73,6 +75,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="email"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -93,7 +97,9 @@
                 android:id="@+id/txtAge"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Date de naissance"
+                android:hint="Birthday"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:inputType="date" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -116,7 +122,9 @@
                     android:id="@+id/txtadresse"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="adresse"
+                    android:hint="adress"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/backgrounborder"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -139,6 +147,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="phone"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:inputType="number" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -162,6 +172,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="password"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -170,9 +182,9 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Gender "
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:gravity="left"
-            android:textColor="@color/primary03"
             app:layout_constraintStart_toStartOf="@+id/txtLayoutpassword"
             app:layout_constraintTop_toBottomOf="@+id/txtLayoutpassword"
             />
@@ -186,42 +198,44 @@
             app:layout_constraintStart_toStartOf="@+id/txtLayoutpassword"
        app:layout_constraintTop_toBottomOf="@+id/textsex">
 
-       <androidx.appcompat.widget.AppCompatCheckBox
+            <com.google.android.material.checkbox.MaterialCheckBox
 
-        android:id="@+id/sexef"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:hint="Femme"
-        android:layout_margin="5dp"
+                android:id="@+id/sexef"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="female"
+                android:textColor="@color/white"
 
-        />
-       <Space
+                />
+
+            <Space
            android:layout_width="80dp"
            android:layout_height="50dp"/>
 
-       <androidx.appcompat.widget.AppCompatCheckBox
+            <com.google.android.material.checkbox.MaterialCheckBox
 
            android:id="@+id/sexeh"
            android:layout_width="wrap_content"
            android:layout_height="match_parent"
            android:layout_margin="5dp"
-           android:hint="Homme" />
+           android:textColor="@color/white"
+           android:text="Male" />
 
 
 
    </LinearLayout>
-        <androidx.appcompat.widget.AppCompatCheckBox
-
+        <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/role"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:hint="Singup as psychiatrist"
+            android:text="Singup as psychiatrist"
             android:layout_margin="5dp"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sexe"
             />
-
 
 
         <Button

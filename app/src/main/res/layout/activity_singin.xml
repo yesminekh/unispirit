@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraint_Layout"
-    android:layout_margin="20dp"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         tools:context=".Login">
 
         <ImageView
@@ -31,6 +33,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/logopic"
             app:errorEnabled="true"
+
             app:startIconDrawable="@drawable/ic_email"
 
             >
@@ -39,18 +42,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Email"
-                app:startIconTint="@color/primary03"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:layout_margin="10dp"
                 android:inputType="textEmailAddress"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtLayoutpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:errorEnabled="true"
             app:layout_constraintTop_toBottomOf="@id/txtLayoutemail"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
 
             android:layout_below="@+id/txtLayoutemail">
             <com.google.android.material.textfield.TextInputEditText
@@ -59,6 +65,8 @@
                 android:layout_height="match_parent"
                 android:hint="Password"
                 android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/backgrounborder"
                 android:inputType="textPassword"
                 />
 
@@ -70,6 +78,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Remember Me"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +93,7 @@
             android:gravity="center"
             android:text="forget password?"
             android:textSize="18sp"
-            android:textColor="@color/primary03"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtLayoutpassword" />
 
@@ -130,7 +139,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:gravity="right"
-                android:textColor="@color/primary03"
+                android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnlogin"
                 />

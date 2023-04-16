@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/drawable-v24/backgrounborder.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/drawable/gradientbackground.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/drawable/shape.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/activity_forget_password.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/activity_resetpassword.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/activity_sing_up.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/activity_singin.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/activity_splash_screen.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/fragment_home_psyfragment.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/fragment_homeuserfragmenet.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/layout/fragment_profile.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1135" />
+        <entry key="..\:/Users/yesmi/Desktop/project/unispirit/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1135" />
         <entry key="..\:/Users/yesmi/Desktop/unispirit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.152" />
         <entry key="..\:/Users/yesmi/Desktop/unispirit/app/src/main/res/drawable/backgrounborder.xml" value="0.152" />
         <entry key="..\:/Users/yesmi/Desktop/unispirit/app/src/main/res/drawable/backgrounborderleft01.xml" value="0.152" />

@@ -18,7 +18,7 @@
             android:id="@+id/text01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/primary01"
+            android:textColor="@color/primary02"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_margin="20dp"
@@ -34,30 +34,25 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+
+            android:contextClickable="true"
+            android:onClick="select"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text01"
             app:wheelAnchorAngle="270"
             app:wheelAnimationDuration="800"
             app:wheelArcBackgroundColor="@color/primary01"
-            app:wheelCenterIconPadding="16dp"
-            app:wheelCenterIconTint="@android:color/white"
             app:wheelCenterIcon="@drawable/ic_baseline_person_outline_24"
+            app:wheelCenterIconPadding="16dp"
+            app:wheelCenterIconTint="@color/white"
             app:wheelDividerStrokeWidth="16dp"
             app:wheelMode="ANIMATE_TO_ANCHOR"
             app:wheelSelectedArcBackgroundColor="@color/primary03"
             app:wheelSelectedTextColor="#FFF"
             app:wheelStartAngle="315"
-            app:wheelTextColor="#000000"
-            app:wheelTextSize="16sp"
-            android:contextClickable="true"
-            android:onClick="select"
-
-            tools:ignore="OnClick" />
+            app:wheelTextColor="@color/black"
+            app:wheelTextSize="16sp" />
 
     </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,43 +14,44 @@ interface RetrofitApi {
 
     @POST("/user/login")
     fun userLogin(
-        @Body user: UserResetPassword
+        @Body user: UserResetPassword,
     ):Call<User>
 
-    @POST("/user/singup")
+    @POST("user/singup")
     fun userSingup(
         @Body user:User,
     ):Call<User>
 
-    @POST("/user/forgotPassword")
+    @POST("user/forgotPassword")
     fun sendResetCode(
         @Body user: UserReset
     ):Call<UserResetResponse>
 
-    @PUT("/user/editPassword")
+    @PUT("user/editPassword")
     fun changePasswordReset(
         @Body user:UserResetPassword):Call<User>
 
 
-    @POST("/message/sendMessage")
+    @POST("message/sendMessage")
     fun send(
         @Body user: Messages
     ):Call<Messages>
 
-    @GET("/message/getall")
+    @GET("message/getall")
     fun getAllMessage()
     :Call<List<Messages>>
 
     companion object {
 
-        var BASE_URL = "http://172.168.1.14:3000/"
+        var BASE_URL = "http://192.168.1.11:3000/"
+        //var BASE_URL = "https://unispirrit.herokuapp.com"
         // baad badl add ip hathy bmtaak
 
         fun create() : RetrofitApi {
 
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl(BASE_URL)
+                .baseUrl("http://192.168.1.11:3000/")
                 .build()
 
             return retrofit.create(RetrofitApi::class.java)
