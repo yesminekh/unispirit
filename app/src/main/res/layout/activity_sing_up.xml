@@ -229,7 +229,7 @@
             android:id="@+id/role"
             android:layout_width="300dp"
             android:layout_height="match_parent"
-            android:text="Singup as psychiatrist"
+            android:text="Singup as Coach"
             android:layout_margin="5dp"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"

@@ -43,7 +43,7 @@ interface RetrofitApi {
 
     companion object {
 
-        var BASE_URL = "http://192.168.1.11:3000/"
+        var BASE_URL = "http://192.168.1.13:3000"
         //var BASE_URL = "https://unispirrit.herokuapp.com"
         // baad badl add ip hathy bmtaak
 
@@ -51,7 +51,7 @@ interface RetrofitApi {
 
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://192.168.1.11:3000/")
+                .baseUrl("http://192.168.1.13:3000/")
                 .build()
 
             return retrofit.create(RetrofitApi::class.java)

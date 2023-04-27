@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "809917023855",
+    "project_id": "unispirit-82e4b",
+    "storage_bucket": "unispirit-82e4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809917023855:android:ec03281fd84de6e0456f9a",
+        "android_client_info": {
+          "package_name": "com.example.unispirit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809917023855-gel8eqsoj5eco85lhfgfge93rh0a3v5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCahW9c2YIQjf1Jv-tuhbO91Wp56GeZ6yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809917023855-gel8eqsoj5eco85lhfgfge93rh0a3v5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
