@@ -11,7 +11,7 @@ var messageRouter = require('./routes/message');
 var app = express();
 //liaison base de donnes mongodb
 
-mongoose.connect("mongodb://localhost:27017/unispirit")
+mongoose.connect("mongodb+srv://zmandarus:hadhoud4life@cluster0.3plcqvz.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log(" database connected"))
 
 
